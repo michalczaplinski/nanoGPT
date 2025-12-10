@@ -1,3 +1,4 @@
+# region: imports
 """
 Full definition of a GPT Language Model, all of it in this single file.
 References:
@@ -14,6 +15,8 @@ from dataclasses import dataclass
 import torch
 import torch.nn as nn
 from torch.nn import functional as F
+
+# endregion: imports
 
 class LayerNorm(nn.Module):
     """ LayerNorm but with an optional bias. PyTorch doesn't support simply bias=False """
